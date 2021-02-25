@@ -3,7 +3,7 @@ package exercicio_2.entities;
 public class Carga {
     private Double valor;
     private Double peso;
-
+    private int distancia;
 
     public Carga() {
 
@@ -12,6 +12,12 @@ public class Carga {
     public Carga(Double valor, Double peso) {
         this.valor = valor;
         this.peso = peso;
+    }
+
+    public Carga(Double valor, Double peso, int distancia){
+        this.valor = valor;
+        this.peso = peso;
+        this.distancia = distancia;
     }
 
     public Double getValor() {
@@ -28,5 +34,13 @@ public class Carga {
 
     public void setPeso(Double peso) {
         this.peso = peso;
+    }
+
+    public int getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(int distancia) {
+        this.distancia = distancia;
     }
 }
